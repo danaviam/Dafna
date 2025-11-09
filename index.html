@@ -282,6 +282,9 @@
             transition: all 0.3s ease;
             text-align: right;
             direction: rtl;
+            display: block;
+            visibility: visible;
+            opacity: 1;
         }
 
         .form-group input:focus,
@@ -386,11 +389,24 @@
                 -webkit-appearance: none;
                 -moz-appearance: none;
                 appearance: none;
+                display: block !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+                width: 100% !important;
             }
             
             .form-group textarea {
                 resize: vertical;
                 min-height: 100px;
+                display: block !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+            }
+            
+            .form-group {
+                display: block !important;
+                visibility: visible !important;
+                opacity: 1 !important;
             }
         }
         
@@ -445,16 +461,33 @@
                 font-size: 16px; /* Prevents zoom on iOS */
                 padding: 0.8rem;
                 min-height: 44px; /* Touch target size */
+                display: block !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+                width: 100% !important;
             }
             
             .form-group textarea {
                 min-height: 120px;
                 resize: vertical;
+                display: block !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+            }
+            
+            .form-group {
+                margin-bottom: 1.5rem;
+                display: block !important;
+                visibility: visible !important;
+                opacity: 1 !important;
             }
             
             .contact-form {
                 max-width: 100%;
                 padding: 0;
+                display: block !important;
+                visibility: visible !important;
+                opacity: 1 !important;
             }
         }
 		
@@ -738,7 +771,7 @@
 
             <div class="form-group">
                 <label for="comments">הערות והודעה:</label>
-                <textarea id="comments" name="comments" rows="5" placeholder="ספר לנו אם יש לך שאלות או בקשות מיוחדות..." style="display: block !important; visibility: visible !important; opacity: 1 !important;"></textarea>
+                <textarea id="comments" name="comments" rows="5" placeholder="ספר לנו אם יש לך שאלות או בקשות מיוחדות..."></textarea>
             </div>
 
             <button type="submit" class="submit-btn" id="submit-button">שלח הזמנה</button>
@@ -895,6 +928,14 @@
                 }, 3000);
             });
             
+            // Ensure form elements are visible on mobile
+            const formElements = document.querySelectorAll('.form-group, .form-group textarea, .form-group input, .form-group select');
+            formElements.forEach(element => {
+                element.style.display = 'block';
+                element.style.visibility = 'visible';
+                element.style.opacity = '1';
+            });
+            
             // Fallback: ensure sections are visible after 2 seconds (in case observer fails)
             setTimeout(() => {
                 document.querySelectorAll('section').forEach(section => {
@@ -903,6 +944,14 @@
                         section.style.transform = 'translateY(0)';
                     }
                 });
+                
+                // Double-check form visibility
+                const commentsField = document.getElementById('comments');
+                if (commentsField) {
+                    commentsField.style.display = 'block';
+                    commentsField.style.visibility = 'visible';
+                    commentsField.style.opacity = '1';
+                }
             }, 2000);
         });
 
