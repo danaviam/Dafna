@@ -151,6 +151,8 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
+            visibility: visible; /* Ensure visibility */
+            opacity: 1; /* Ensure opacity */
         }
 
         .artwork {
@@ -346,6 +348,9 @@
             .gallery {
                 grid-template-columns: 1fr;
                 gap: 1.5rem;
+                display: grid !important; /* Force display on mobile */
+                visibility: visible !important; /* Force visibility */
+                opacity: 1 !important; /* Force opacity */
             }
             
             .artwork img {
@@ -356,6 +361,8 @@
             section {
                 margin: 2rem 0;
                 padding: 2rem;
+                opacity: 1 !important; /* Ensure sections are visible on mobile */
+                transform: none !important; /* Remove transforms on mobile */
             }
 
             .logo {
@@ -887,12 +894,22 @@
                     }
                 }, 3000);
             });
+            
+            // Fallback: ensure sections are visible after 2 seconds (in case observer fails)
+            setTimeout(() => {
+                document.querySelectorAll('section').forEach(section => {
+                    if (section.style.opacity === '0') {
+                        section.style.opacity = '1';
+                        section.style.transform = 'translateY(0)';
+                    }
+                });
+            }, 2000);
         });
 
-        // Add some animation on scroll
+        // Add some animation on scroll - with mobile fix
         const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+            threshold: 0.05, // Lower threshold for mobile
+            rootMargin: '0px 0px -20px 0px' // Smaller margin for mobile
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -904,12 +921,23 @@
             });
         }, observerOptions);
 
+        // Check if device is mobile for different animation behavior
+        const isMobile = window.innerWidth <= 768;
+        
         // Observe all sections for animation
         document.querySelectorAll('section').forEach(section => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(30px)';
-            section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-            observer.observe(section);
+            if (isMobile) {
+                // On mobile, make sections visible immediately to prevent disappearing
+                section.style.opacity = '1';
+                section.style.transform = 'translateY(0)';
+                section.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            } else {
+                // On desktop, use the fade-in animation
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(30px)';
+                section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                observer.observe(section);
+            }
         });
     </script>
 </body>
