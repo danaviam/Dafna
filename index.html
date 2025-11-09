@@ -307,6 +307,9 @@
             font-weight: bold;
             font-size: 1.1rem;
             width: 100%;
+            margin-top: 1rem;
+            position: relative;
+            z-index: 1;
         }
 
         .submit-btn:hover {
@@ -407,6 +410,16 @@
                 display: block !important;
                 visibility: visible !important;
                 opacity: 1 !important;
+                margin-bottom: 1.5rem;
+                clear: both;
+                position: relative;
+            }
+            
+            .submit-btn {
+                margin-top: 1.5rem;
+                clear: both;
+                position: relative;
+                z-index: 1;
             }
         }
         
@@ -480,6 +493,17 @@
                 display: block !important;
                 visibility: visible !important;
                 opacity: 1 !important;
+                clear: both;
+                position: relative;
+            }
+            
+            .submit-btn {
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+                position: relative;
+                z-index: 1;
+                clear: both;
+                display: block !important;
             }
             
             .contact-form {
@@ -488,6 +512,7 @@
                 display: block !important;
                 visibility: visible !important;
                 opacity: 1 !important;
+                overflow: visible;
             }
         }
 		
@@ -934,7 +959,18 @@
                 element.style.display = 'block';
                 element.style.visibility = 'visible';
                 element.style.opacity = '1';
+                element.style.position = 'relative';
+                element.style.zIndex = '1';
             });
+            
+            // Ensure submit button doesn't overlap
+            const submitButton = document.getElementById('submit-button');
+            if (submitButton) {
+                submitButton.style.marginTop = '2rem';
+                submitButton.style.clear = 'both';
+                submitButton.style.position = 'relative';
+                submitButton.style.zIndex = '1';
+            }
             
             // Fallback: ensure sections are visible after 2 seconds (in case observer fails)
             setTimeout(() => {
