@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>גלריית האמניות הצעירות</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', 'Tahoma', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: 
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='250' viewBox='0 0 300 250'%3E%3C!-- Heart doodle --%3E%3Cpath d='M50 80 C40 70, 25 70, 25 85 C25 100, 50 120, 50 120 C50 120, 75 100, 75 85 C75 70, 60 70, 50 80 Z' fill='none' stroke='%23ff69b4' stroke-width='2' opacity='0.10'/%3E%3C!-- Star doodle --%3E%3Cpath d='M200 50 L205 65 L220 65 L208 75 L213 90 L200 80 L187 90 L192 75 L180 65 L195 65 Z' fill='none' stroke='%23da70d6' stroke-width='2' opacity='0.15'/%3E%3C!-- Flower doodle --%3E%3Ccircle cx='100' cy='180' r='8' fill='none' stroke='%23ffb6c1' stroke-width='2' opacity='0.15'/%3E%3Ccircle cx='90' cy='170' r='6' fill='none' stroke='%23ffb6c1' stroke-width='2' opacity='0.15'/%3E%3Ccircle cx='110' cy='170' r='6' fill='none' stroke='%23ffb6c1' stroke-width='2' opacity='0.15'/%3E%3Ccircle cx='90' cy='190' r='6' fill='none' stroke='%23ffb6c1' stroke-width='2' opacity='0.15'/%3E%3Ccircle cx='110' cy='190' r='6' fill='none' stroke='%23ffb6c1' stroke-width='2' opacity='0.15'/%3E%3Cline x1='100' y1='188' x2='100' y2='210' stroke='%2390EE90' stroke-width='2' opacity='0.15'/%3E%3C!-- Cloud doodle --%3E%3Cpath d='M250 150 C240 150, 235 140, 245 140 C240 130, 255 130, 260 140 C270 135, 275 145, 265 150 Z' fill='none' stroke='%23dda0dd' stroke-width='2' opacity='0.15'/%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='300' viewBox='0 0 280 300'%3E%3C!-- Sun doodle --%3E%3Ccircle cx='60' cy='60' r='15' fill='none' stroke='%23ff1493' stroke-width='2' opacity='0.15'/%3E%3Cline x1='60' y1='35' x2='60' y2='25' stroke='%23ff1493' stroke-width='2' opacity='0.15'/%3E%3Cline x1='60' y1='85' x2='60' y2='95' stroke='%23ff1493' stroke-width='2' opacity='0.15'/%3E%3Cline x1='35' y1='60' x2='25' y2='60' stroke='%23ff1493' stroke-width='2' opacity='0.15'/%3E%3Cline x1='85' y1='60' x2='95' y2='60' stroke='%23ff1493' stroke-width='2' opacity='0.15'/%3E%3C!-- Butterfly doodle --%3E%3Cpath d='M180 120 C175 115, 175 125, 180 120 C185 115, 185 125, 180 120' fill='none' stroke='%23c71585' stroke-width='2' opacity='0.15'/%3E%3Cpath d='M170 115 C165 110, 165 120, 170 115 C175 110, 175 120, 170 115' fill='none' stroke='%23c71585' stroke-width='2' opacity='0.15'/%3E%3Cline x1='180' y1='110' x2='180' y2='130' stroke='%23c71585' stroke-width='2' opacity='0.15'/%3E%3C!-- House doodle --%3E%3Crect x='40' y='200' width='40' height='30' fill='none' stroke='%23ba55d3' stroke-width='2' opacity='0.15'/%3E%3Cpath d='M35 200 L60 180 L85 200' fill='none' stroke='%23ba55d3' stroke-width='2' opacity='0.15'/%3E%3Crect x='50' y='210' width='8' height='15' fill='none' stroke='%23ba55d3' stroke-width='2' opacity='0.15'/%3E%3C!-- Rainbow doodle --%3E%3Cpath d='M200 250 C210 240, 230 240, 240 250' fill='none' stroke='%23ff69b4' stroke-width='2' opacity='0.15'/%3E%3Cpath d='M205 255 C215 245, 225 245, 235 255' fill='none' stroke='%23da70d6' stroke-width='2' opacity='0.15'/%3E%3C/svg%3E"),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='350' height='280' viewBox='0 0 350 280'%3E%3C!-- Balloon doodle --%3E%3Cellipse cx='80' cy='80' rx='12' ry='18' fill='none' stroke='%23ff69b4' stroke-width='2' opacity='0.10'/%3E%3Cline x1='80' y1='98' x2='80' y2='120' stroke='%23ff69b4' stroke-width='1' opacity='0.15'/%3E%3C!-- Cat doodle --%3E%3Ccircle cx='200' cy='150' r='20' fill='none' stroke='%23dda0dd' stroke-width='2' opacity='0.15'/%3E%3Cpath d='M185 135 L190 125 L195 135' fill='none' stroke='%23dda0dd' stroke-width='2' opacity='0.15'/%3E%3Cpath d='M205 135 L210 125 L215 135' fill='none' stroke='%23dda0dd' stroke-width='2' opacity='0.15'/%3E%3Ccircle cx='195' cy='145' r='1' fill='%23dda0dd' opacity='0.15'/%3E%3Ccircle cx='205' cy='145' r='1' fill='%23dda0dd' opacity='0.15'/%3E%3Cpath d='M200 150 L195 155 M200 150 L205 155' stroke='%23dda0dd' stroke-width='1' opacity='0.15'/%3E%3C!-- Tree doodle --%3E%3Cline x1='300' y1='180' x2='300' y2='220' stroke='%238B4513' stroke-width='3' opacity='0.15'/%3E%3Ccircle cx='300' cy='170' r='15' fill='none' stroke='%2390EE90' stroke-width='2' opacity='0.15'/%3E%3C!-- Music note --%3E%3Cellipse cx='50' cy='200' rx='4' ry='3' fill='%23ff1493' opacity='0.15'/%3E%3Cline x1='54' y1='200' x2='54' y2='175' stroke='%23ff1493' stroke-width='2' opacity='0.15'/%3E%3C/svg%3E"),
+                linear-gradient(to bottom, #ffeef0 0%, #fff0f5 50%, #f8f0ff 100%);
+            background-size: 300px 250px, 280px 300px, 350px 280px, 100% 100%;
+            background-attachment: fixed;
+            min-height: 100vh;
+            direction: rtl;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+            transform: translateY(-2px);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            right: 0;
+            background: #667eea;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Main Content */
+        main {
+            margin-top: 80px;
+            padding: 2rem 0;
+        }
+
+        section {
+            margin: 4rem 0;
+            padding: 3rem;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: none;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .artwork {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+		
+		.artwork.sold-out img {
+			filter: grayscale(60%) brightness(0.8);
+			opacity: 0.7;
+		}
+		.sold-stamp {
+			position: absolute;
+			top: 60px;
+			left: 50%;
+			transform: translateX(-50%) rotate(-15deg);
+			background: rgba(255, 0, 64, 0.55);
+			color: #fff;
+			font-size: 2rem;
+			font-weight: bold;
+			padding: 0.5rem 2rem;
+			border-radius: 20px;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+			z-index: 2;
+			pointer-events: none;
+			letter-spacing: 15px;
+		}
+
+        .artwork:hover {
+            transform: translateY(-10px) rotate(-1deg);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .artwork img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            background: linear-gradient(45deg, #ff9a9e, #fecfef, #fecfef, #a8edea);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 1.2rem;
+        }
+
+        .artwork-info {
+            padding: 1.5rem;
+            text-align: right;
+        }
+
+        .artwork-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .artwork-artist {
+            color: #667eea;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .artwork-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #764ba2;
+            margin-bottom: 1rem;
+        }
+
+        .order-btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        .order-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        /* About Section */
+        .about-content {
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #333;
+            text-align: right;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            text-align: right;
+            direction: rtl;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            font-size: 1.1rem;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                margin: 2rem 0;
+                padding: 2rem;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+        }
+		
+
+
+        /* Hebrew-specific adjustments */
+        .price-symbol {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">🎨 אמניות צעירות</div>
+            <ul class="nav-links logo">
+                <li><a href="#gallery">גלריה</a></li>
+                <li><a href="#about">אודות</a></li>
+                <li><a href="#contact">צור קשר</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="hero">
+            <h1>ברוכים הבאים לגלריית האומנות של דפנה</h1>
+            <p style="text-align: center; font-size: 1.3rem; color: #555; margin-top: 1rem;">
+                גלו יצירות אמנות יפהפיות שנוצרו על ידי אמנית צעירה ומוכשרת
+            </p>
+        </section>
+
+        <section id="gallery">
+            <h2>גלריה</h2>
+            <div class="gallery">
+                <!-- Sample Artwork 1 -->
+                <div class="artwork">
+                    <img src="bat_yam.jpeg" alt="בת הים היפה" onerror="this.innerHTML='🧜‍♀️ בת הים היפה'; this.style.display='flex';">
+                    <div class="artwork-info">
+                        <div class="artwork-title">בת הים היפה</div>
+                        <div class="artwork-artist">מאת דפנה, בת 7</div>
+                        <div class="artwork-price">₪35<span class="price-symbol"></span></div>
+                        <button class="order-btn" onclick="orderArtwork('בת הים היפה', '₪35')">הזמן ציור זה</button>
+                    </div>
+                </div>
+
+                <!-- Sample Artwork 2 -->
+                <div class="artwork">
+				<img src="shvil.jpeg" alt="לטיול יצאנו" onerror="this.innerHTML='👨‍👩‍👧‍👦 לטיול יצאנו'; this.style.display='flex';">
+				<div class="artwork-info">
+						<div class="artwork-title">לטיול יצאנו</div>
+						<div class="artwork-artist">מאת דפנה, בת 7</div>
+						<div class="artwork-price">₪40<span class="price-symbol"></span></div>
+						<button class="order-btn" onclick="orderArtwork('לטיול יצאנו', '₪40')">הזמן ציור זה</button>
+					</div>
+				</div>
+
+                <!-- Sample Artwork 3 -->
+                <div class="artwork sold-out">
+                    <img src="kelev.jpeg" alt="כלב חמוד" onerror="this.innerHTML='🐕 כלב'; this.style.display='flex';">
+					<div class="sold-stamp">נמכר!</div>
+                    <div class="artwork-info">
+                        <div class="artwork-title">הכלב החמוד שלנו</div>
+                        <div class="artwork-artist">מאת דפנה, בת 7</div>
+                        <div class="artwork-price">₪75<span class="price-symbol"></span></div>
+                        <button class="order-btn" disabled style="background: #ccc; cursor: not-allowed;">נמכר</button>
+                    </div>
+                </div>
+
+                <!-- Sample Artwork 4 -->
+                <div class="artwork">
+                    <img src="pilim.jpeg" alt="פילים בסוואנה" onerror="this.innerHTML='🐘 פילים בסוואנה'; this.style.display='flex';">
+                    <div class="artwork-info">
+                        <div class="artwork-title">פילים בסוואנה</div>
+                        <div class="artwork-artist">מאת דפנה, בת 7</div>
+                        <div class="artwork-price">₪30<span class="price-symbol"></span></div>
+                        <button class="order-btn" onclick="orderArtwork('פילים בסוואנה', '₪30')">הזמן ציור זה</button>
+                    </div>
+                </div>
+
+                <!-- Sample Artwork 5 -->
+                <div class="artwork">
+                    <img src="moana.jpeg" alt="הלב של טה-פיטי" onerror="this.innerHTML='🌊 הלב של טה-פיטי'; this.style.display='flex';">
+                    <div class="artwork-info">
+                        <div class="artwork-title">הלב של טה-פיטי</div>
+                        <div class="artwork-artist">מאת דפנה, בת 7</div>
+                        <div class="artwork-price">₪30<span class="price-symbol"></span></div>
+                        <button class="order-btn" onclick="orderArtwork('הלב של טה-פיטי', '₪30')">הזמן ציור זה</button>
+                    </div>
+                </div>
+				
+				<!-- Sample Artwork 6 -->
+                <div class="artwork">
+                    <img src="icecream.jpeg" alt="גלידה שפריץ" onerror="this.innerHTML='🍧 גלידה שפריץ'; this.style.display='flex';">
+                    <div class="artwork-info">
+                        <div class="artwork-title">גלידה שפריץ</div>
+                        <div class="artwork-artist">מאת דפנה, בת 7.5</div>
+                        <div class="artwork-price">₪700<span class="price-symbol"></span></div>
+                        <button class="order-btn" onclick="orderArtwork('גלידה שפריץ', '₪700')">הזמן ציור זה</button>
+                    </div>
+                </div>
+				
+				<!-- Sample Artwork 7 -->
+                <div class="artwork">
+                    <img src="fox.jpeg" alt="השועל שהלך לאיבוד" onerror="this.innerHTML='🦊 השועל שהלך לאיבוד '; this.style.display='flex';">
+                    <div class="artwork-info">
+                        <div class="artwork-title">השועל שהלך לאיבוד</div>
+                        <div class="artwork-artist">מאת דפנה, בת 7.5</div>
+                        <div class="artwork-price">₪30<span class="price-symbol"></span></div>
+                        <button class="order-btn" onclick="orderArtwork('השועל שהלך לאיבוד', '₪30')">הזמן ציור זה</button>
+                    </div>
+                </div>
+				
+				<!-- Sample Artwork 8 -->
+                <div class="artwork">
+                    <img src="ahava_isr.jpeg" alt=" אהבה ישראלית" onerror="this.innerHTML=' אהבה ישראלית'; this.style.display='flex';">
+                    <div class="artwork-info">
+                        <div class="artwork-title"> אהבה ישראלית </div>
+                        <div class="artwork-artist">מאת דפנה, בת 7.5</div>
+                        <div class="artwork-price">₪30<span class="price-symbol"></span></div>
+                        <button class="order-btn" onclick="orderArtwork('אהבה ישראלית', '₪30')">הזמן ציור זה</button>
+                    </div>
+                </div>
+				
+				<!-- Sample Artwork 9 -->
+                <div class="artwork">
+                    <img src="big_forest.jpeg" alt=" היער הגדול" onerror="this.innerHTML=' היער הגדול '; this.style.display='flex';">
+                    <div class="artwork-info">
+                        <div class="artwork-title"> היער הגדול </div>
+                        <div class="artwork-artist">מאת דפנה, בת 7.5</div>
+                        <div class="artwork-price">₪30<span class="price-symbol"></span></div>
+                        <button class="order-btn" onclick="orderArtwork('היער הגדול', '₪30')">הזמן ציור זה</button>
+                    </div>
+                </div>
+				
+				<!-- Sample Artwork 10 -->
+                <div class="artwork">
+                    <img src="girl_and_dog.jpeg" alt=" הילדה והכלב" onerror="this.innerHTML=' הילדה והכלב'; this.style.display='flex';">
+                    <div class="artwork-info">
+                        <div class="artwork-title"> הילדה והכלב </div>
+                        <div class="artwork-artist">מאת דפנה, בת 7.5</div>
+                        <div class="artwork-price">₪30<span class="price-symbol"></span></div>
+                        <button class="order-btn" onclick="orderArtwork('הילדה והכלב', '₪30')">הזמן ציור זה</button>
+                    </div>
+                </div>
+								
+				<!-- Sample Artwork 11 -->
+                <div class="artwork">
+                    <img src="3in1.jpeg" alt=" פרחים" onerror="this.innerHTML=' *מבצע* - פרחים'; this.style.display='flex';">
+                    <div class="artwork-info">
+                        <div class="artwork-title"> פרחים (3 ציורים במבצע)</div>
+                        <div class="artwork-artist">מאת דפנה, בת 7.5</div>
+                        <div class="artwork-price">₪30<span class="price-symbol"></span></div>
+                        <button class="order-btn" onclick="orderArtwork('פרחים (3 ציורים במבצע)', '₪30')">הזמן ציור זה</button>
+                    </div>
+                </div>
+				
+				<!-- Sample Artwork 12 -->
+                <div class="artwork">
+                    <img src="uni-hourse.jpeg" alt="הסוס המהמם בעולם" onerror="this.innerHTML='הסוס המהמם בעולם'; this.style.display='flex';">
+                    <div class="artwork-info">
+                        <div class="artwork-title"> הסוס המהמם בעולם</div>
+                        <div class="artwork-artist">מאת דפנה, בת 7.5</div>
+                        <div class="artwork-price">₪60<span class="price-symbol"></span></div>
+                        <button class="order-btn" onclick="orderArtwork('הסוס המהמם בעולם', '₪60')">הזמן ציור זה</button>
+                    </div>
+                </div>
+				
+				<!-- Sample Artwork 13 -->
+                <div class="artwork">
+                    <img src="dj_pinguin.jpeg" alt="DJ פינגויין" onerror="this.innerHTML='DJ פינגויין'; this.style.display='flex';">
+                    <div class="artwork-info">
+                        <div class="artwork-title">DJ פינגויין </div>
+                        <div class="artwork-artist">מאת דפנה, בת 7.5</div>
+                        <div class="artwork-price">₪60<span class="price-symbol"></span></div>
+                        <button class="order-btn" onclick="orderArtwork('דיג\'יי פינגויין', '₪60')">הזמן ציור זה</button>
+                    </div>
+                </div>
+				
+				<!-- Sample Artwork 14-->
+                <div class="artwork">
+                    <img src="bambi.jpeg" alt="אימא במבי והילדה" onerror="this.innerHTML='אימא במבי והילדה'; this.style.display='flex';">
+                    <div class="artwork-info">
+                        <div class="artwork-title">אימא במבי והילדה</div>
+                        <div class="artwork-artist">מאת דפנה, בת 7.5</div>
+                        <div class="artwork-price">₪40<span class="price-symbol"></span></div>
+                        <button class="order-btn" onclick="orderArtwork('אימא במבי והילדה', '₪40')">הזמן ציור זה</button>
+                    </div>
+                </div>
+				
+				<!-- Sample Artwork 15-->
+                <div class="artwork">
+                    <img src="night_wolf.jpeg" alt="זאב היללות" onerror="this.innerHTML='זאב היללות'; this.style.display='flex';">
+                    <div class="artwork-info">
+                        <div class="artwork-title">זאב היללות</div>
+                        <div class="artwork-artist">מאת דפנה, בת 7.5</div>
+                        <div class="artwork-price">₪60<span class="price-symbol"></span></div>
+                        <button class="order-btn" onclick="orderArtwork('זאב היללות', '₪60')">הזמן ציור זה</button>
+                    </div>
+                </div>
+				
+				<!-- Sample Artwork 16-->
+                <div class="artwork">
+                    <img src="north_deer.jpeg" alt="אייל הצפון" onerror="this.innerHTML='אייל הצפון'; this.style.display='flex';">
+                    <div class="artwork-info">
+                        <div class="artwork-title">אייל הצפון</div>
+                        <div class="artwork-artist">מאת דפנה, בת 7.5</div>
+                        <div class="artwork-price">₪50<span class="price-symbol"></span></div>
+                        <button class="order-btn" onclick="orderArtwork('אייל הצפון', '₪50')">הזמן ציור זה</button>
+                    </div>
+                </div>
+				
+				<!-- Sample Artwork 17-->
+                <div class="artwork">
+                    <img src="cute_animals.jpeg" alt=" חיות מתכרבלות" onerror="this.innerHTML=' חיות מתכרבלות '; this.style.display='flex';">
+                    <div class="artwork-info">
+                        <div class="artwork-title"> חיות מתכרבלות </div>
+                        <div class="artwork-artist">מאת דפנה, בת 7.5</div>
+                        <div class="artwork-price">₪30<span class="price-symbol"></span></div>
+                        <button class="order-btn" onclick="orderArtwork('חיות מתכרבלות', '₪30')">הזמן ציור זה</button>
+                    </div>
+                </div>
+			
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>אודות האומנית הצעירה שלנו</h2>
+            <div class="about-content">
+                <p>שלום, נעים לי מאוד, שמי דפנה (ואני בת 7.5), ואני אוהבת לצייר וליצור הרבה דברים כיפיים.🤩</p>
+                
+                <p>פתחתי את האתר כדי שאוכל לשתף ולמכור ציורים שלי שציירתי.🖌️🎨🖼️</p>
+                
+                <p>ואני שמחה מאוד שאתם קונים ממני את הציורים שלי!🥇</p>
+            </div>
+        </section>
+		
+		<section id="contact">
+    <h2>צור קשר והזמנות</h2>
+    <div class="contact-form">
+        <form action="https://api.web3forms.com/submit" method="POST" onsubmit="handleWeb3FormSubmit(event)">
+            <!-- Web3Forms access key - replace with your actual key -->
+            <input type="hidden" name="access_key" value="64cdc291-0132-4572-ab5c-52f402488041">
+            
+            <!-- Hidden fields for better email formatting -->
+            <input type="hidden" name="subject" value="הזמנת ציור חדשה מהגלריה">
+            <input type="hidden" name="from_name" value="גלריית דפנה">
+            
+            <div class="form-group">
+                <label for="name">השם שלך:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <!-- <div class="form-group">
+                <label for="email">כתובת דוא"ל:</label>
+                <input type="email" id="email" name="email" required>
+            </div> -->
+
+            <div class="form-group">
+                <label for="requested_paint">באיזה ציור אתה מעוניין?</label>
+                <select id="requested_paint" name="requested_paint" required>
+                    <option value="">בחר ציור...</option>
+                    <option value="בת הים היפה - ₪35">בת הים היפה - ₪35</option>
+                    <option value="לטיול יצאנו - ₪40">לטיול יצאנו - ₪40</option>
+                    <option value="פילים בסוואנה - ₪30">פילים בסוואנה - ₪30</option>
+                    <option value="הלב של טה-פיטי - ₪30">הלב של טה-פיטי - ₪30</option>
+                    <option value="גלידה שפריץ - ₪700">גלידה שפריץ - ₪700</option>
+                    <option value="השועל שהלך לאיבוד - ₪30">השועל שהלך לאיבוד - ₪30</option>
+                    <option value="אהבה ישראלית - ₪30">אהבה ישראלית - ₪30</option>
+                    <option value="היער הגדול - ₪30">היער הגדול - ₪30</option>
+                    <option value="הילדה והכלב - ₪30">הילדה והכלב - ₪30</option>
+                    <option value="פרחים (3 ציורים במבצע) - ₪30">פרחים (3 ציורים במבצע) - ₪30</option>
+                    <option value="הסוס המהמם בעולם - ₪60">הסוס המהמם בעולם - ₪60</option>
+                    <option value="דיג'יי פינגויין - ₪60">דיג'יי פינגויין - ₪60</option>
+                    <option value="אימא במבי והילדה - ₪40">אימא במבי והילדה - ₪40</option>
+                    <option value="זאב היללות - ₪60">זאב היללות - ₪60</option>
+                    <option value="אייל הצפון - ₪50">אייל הצפון - ₪50</option>
+                    <option value="חיות מתכרבלות - ₪30">חיות מתכרבלות - ₪30</option>
+                    <option value="אחר">אחר (אנא פרט בהערות)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">הערות והודעה:</label>
+                <textarea id="comments" name="comments" rows="5" placeholder="ספר לנו אם יש לך שאלות או בקשות מיוחדות..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submit-button">שלח הזמנה</button>
+        </form>
+        
+        <!-- Success/Error messages -->
+        <div id="form-message" style="margin-top: 1rem; padding: 1rem; border-radius: 10px; display: none; text-align: center; font-weight: bold;"></div>
+    </div>
+    </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; גלריית האומנות של דפנה // נעשה באהבה 2025.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Function to handle artwork ordering - now populates Web3Forms
+        function orderArtwork(artworkTitle, price) {
+        // Scroll to contact form
+        document.getElementById('contact').scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+        
+        // Pre-populate the dropdown with the selected artwork
+        setTimeout(() => {
+            const dropdown = document.getElementById('requested_paint');
+            // Clean the artwork title by trimming spaces
+            const cleanTitle = artworkTitle.trim();
+            console.log('Looking for artwork:', cleanTitle); // Debug log
+            
+            // Try to find and select the matching option
+            let found = false;
+            for (let i = 0; i < dropdown.options.length; i++) {
+                if (dropdown.options[i].value.includes(cleanTitle)) {
+                    dropdown.selectedIndex = i;
+                    found = true;
+                    console.log('Found match at index:', i, 'Value:', dropdown.options[i].value); // Debug log
+                    break;
+                }
+            }
+            
+            // If not found in dropdown, select "אחר" and add to comments
+            if (!found) {
+                console.log('No match found, using אחר option'); // Debug log
+                dropdown.value = "אחר";
+                const commentsField = document.getElementById('comments');
+                commentsField.value = `מעוניין ב: ${cleanTitle} במחיר ${price}\n\n`;
+                commentsField.focus();
+                commentsField.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }, 800);
+    }
+
+    // Web3Forms submission handler
+    async function handleWeb3FormSubmit(event) {
+        event.preventDefault();
+        
+        const submitButton = document.getElementById('submit-button');
+        const messageDiv = document.getElementById('form-message');
+        const form = event.target;
+        
+        // Show loading state
+        submitButton.textContent = 'שולח...';
+        submitButton.disabled = true;
+        messageDiv.style.display = 'none';
+        
+        try {
+            const formData = new FormData(form);
+            
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            });
+            
+            const result = await response.json();
+            
+            if (result.success) {
+                // Success
+                messageDiv.innerHTML = '✅ ההזמנה נשלחה בהצלחה! נחזור אליך בקרוב.';
+                messageDiv.style.background = 'linear-gradient(135deg, #d4edda, #c3e6cb)';
+                messageDiv.style.color = '#155724';
+                messageDiv.style.border = '1px solid #c3e6cb';
+                messageDiv.style.display = 'block';
+                
+                // Reset form
+                form.reset();
+                
+                // Scroll to message
+                messageDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } else {
+                throw new Error(result.message || 'שגיאה לא ידועה');
+            }
+        } catch (error) {
+            // Error
+            messageDiv.innerHTML = '❌ אירעה שגיאה בשליחת ההזמנה. אנא נסה שוב או צור קשר ישירות.';
+            messageDiv.style.background = 'linear-gradient(135deg, #f8d7da, #f1b0b7)';
+            messageDiv.style.color = '#721c24';
+            messageDiv.style.border = '1px solid #f1b0b7';
+            messageDiv.style.display = 'block';
+            
+            console.error('Form submission error:', error);
+        } finally {
+            // Reset button
+            submitButton.textContent = 'שלח הזמנה';
+            submitButton.disabled = false;
+        }
+    }
+
+        // Add some animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for animation
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
